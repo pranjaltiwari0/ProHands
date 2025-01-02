@@ -11,7 +11,7 @@ const WorkerHome = () => {
   useEffect(() => {
     const fetchWorkerData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/profile', {
+        const response = await fetch('https://prohands.onrender.com', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ const WorkerHome = () => {
           <button
             onClick={async () => {
               try {
-                const response = await fetch('http://localhost:5000/logout', {
+                const response = await fetch('https://prohands.onrender.com', {
                   method: 'GET',
                   credentials: 'include'
                 });
