@@ -32,7 +32,7 @@ const WorkerLogin = () => {
         }
 
         console.log('Attempting worker registration...'); // Debug log
-        const response = await fetch('http://localhost:5000/worker/register', {
+        const response = await fetch('https://prohands.onrender.com', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ const WorkerLogin = () => {
       } else {
         // Login
         console.log('Attempting worker login...'); // Debug log
-        const response = await fetch('http://localhost:5000/worker/login', {
+        const response = await fetch('https://prohands.onrender.com', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
