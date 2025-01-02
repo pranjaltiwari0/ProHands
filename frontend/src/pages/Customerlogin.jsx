@@ -34,7 +34,7 @@ function CustomerLogin({ userType }) {
     try {
       if (!isLogin) {
         // Sign up
-        const response = await fetch('https://prohands.onrender.com', {
+        const response = await fetch('https://prohands.onrender.com/register', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ function CustomerLogin({ userType }) {
         navigate('/customerlogin')
       } else {
         // Login
-        const response = await fetch('https://prohands.onrender.com', {
+        const response = await fetch('https://prohands.onrender.com/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
